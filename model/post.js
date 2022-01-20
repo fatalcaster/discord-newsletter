@@ -6,9 +6,9 @@ const ObjectId = Schema.ObjectId;
 const PostSchema = new Schema({
   content: String,
   date: Date,
-  type: "update" | "annoucement"
+  id: String,
 });
 
-const Post = mongoose.model('Post', PostSchema);
+const Post = mongoose.model("Post", PostSchema);
 
-export {Post};
+export { Post };
